@@ -1,0 +1,31 @@
+.statistics {
+
+    padding: 120px 0px;
+    
+    .static-item {
+
+        margin-bottom: 10px;
+
+        i {
+
+            display: block;
+            font-size: 80px;
+            margin-bottom: 15px;
+            color: $blueColor;
+        }
+
+
+        span {
+
+            color: $redColor;
+            font-size: 40px;
+            margin: 15px 0px;
+            display: block;
+        }
+
+        h4 {
+
+            color: $blueColor;
+        }
+    }
+}

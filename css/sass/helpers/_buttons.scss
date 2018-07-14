@@ -1,0 +1,146 @@
+%btns {
+
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background: none;
+    font-family: 'Oswald', sans-serif;
+
+    &:focus {
+
+        box-shadow: none;
+    }
+}
+
+.get-qoute {
+
+    @extend %btns;
+    border: 2px solid $redColor;
+    @include prefixer(transition, all .5s ease-in-out, webkit mox ms);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    @media #{$largeScreen} , #{$extraLargeScreen}, #{$extraSmallScreen} {
+
+        float: right;
+    }
+    &:focus {
+
+        box-shadow: none;
+    }
+
+    &:hover {
+
+        background: #fff;
+        border: 2px solid $blueColor;
+        color: $redColor;
+    }
+}
+
+
+.comp-overview-btn {
+
+    @extend %btns;
+    background: $redColor;
+    color: #fff;
+    padding: 10px 30px;
+    @include prefixer(transition, all .5s ease-in-out, webkit moz ms o);
+    cursor: pointer;
+    &:hover {
+
+        background: $blueColor;
+    }
+}
+
+
+.price-table-btn {
+
+    @extend %btns;
+    background: $redColor;
+    color: #fff;
+    border: 2px solid $redColor;
+    @include prefixer(transition, all .5s ease-in-out, webkit moz ms o);
+}
+
+.choose-us-btn {
+
+    @extend %btns;
+    background: $redColor;
+    border: 2px solid $redColor;
+    margin-bottom: 10px;
+    @include prefixer(transition, all .5s ease-in-out, webkit moz o ms);
+    &:hover {
+
+        background: #fff;
+        color: $redColor;
+        border: 2px solid #fff;
+    }
+}
+
+
+.we-cool-btn {
+
+    @extend %btns;
+    background: #fff;
+    color: $redColor;
+    font-weight: 500px;
+    border: 2px solid #fff;
+    @include prefixer(transition, all .5s ease-in-out, webkit moz ms o);
+    @media #{$extraSmallScreen}, #{$smallScreen} {
+
+        width: 40%;
+        display: block;
+        margin: 15px auto;
+    }
+
+    &:hover {
+
+        background: $blueColor;
+        border: 2px solid $blueColor;
+        color: #fff;
+    }
+}
+
+
+.scroll-btn {
+
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background: $blueColor;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 9999;
+    @include prefixer(animation, scrollTop .8s infinite linear alternate-reverse, webkit moz ms o);
+    display: none;
+    &:focus {
+
+        outline: none;
+    }
+    i {
+
+        line-height: 50px;
+    }
+}
+
+
+
+@include keyFrame (scrollTop) {
+
+    0% {
+
+        bottom: 30px;
+
+    }
+
+    100% {
+
+        bottom: 45px;
+        box-shadow:  0 5px 5px rgba(#000, .5);
+    }
+
+}

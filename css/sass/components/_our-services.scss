@@ -1,0 +1,50 @@
+.our-services {
+
+    padding: 70px 0px;
+    .our-services-item {
+
+        padding: 20px;
+        span {
+
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 10px auto 20px;
+            border: 2px solid $redColor;
+            border-radius: 50%;
+            cursor: pointer;
+            @include prefixer(transition, all .5s ease-in-out, webkit moz ms o);
+            i {
+
+                color: $redColor;
+                line-height: 100px;
+                @include prefixer(transition, all .5s ease-in-out, webkit moz ms o);
+
+            }
+
+            &:hover {
+
+                background: $redColor;
+                i {
+
+                    color: #fff;
+                }
+            }
+        }
+
+        h3 {
+
+            color: $blueColor;
+            @media #{$largeScreen} {
+                
+                font-size: 20px;
+
+            }
+        }
+
+        p {
+
+            padding-top: 15px;
+        }
+    }
+}

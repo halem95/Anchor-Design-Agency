@@ -1,0 +1,41 @@
+footer {
+
+    padding: 20px 0px;
+
+    .copy-right {
+
+        @media #{$smallScreen}, #{$extraSmallScreen} {
+
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    }
+
+    .social-links {
+        @media #{$largeScreen}, #{$extraLargeScreen}, #{$mediumScreen} {
+
+            text-align: right;
+        }
+
+        @media #{$smallScreen}, #{$extraSmallScreen} {
+            
+            text-align: center;
+        }
+        a {
+
+            text-decoration: none;
+            color: rgba(#000, .5);
+            margin-right: 10px;
+            @include prefixer(transition , all .3s ease-in-out, webkit moz ms o);
+            &:hover {
+
+                color: $blueColor;
+            }
+
+            &:last-of-type {
+
+                margin-right: 0px;
+            }
+        }
+    }
+}

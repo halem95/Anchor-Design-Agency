@@ -1,0 +1,149 @@
+nav.navbar {
+    background: rgba($redColor, .2) !important;
+    .navbar-brand {
+
+        color: $blueColor;
+        font-family: 'Oswald', sans-serif;
+
+        span {
+
+            color: $redColor;
+            font-weight: 500
+        }
+    }
+
+    .navbar-toggler {
+
+        width: 50px;
+        height: 40px;
+        padding: 0px;
+        border: 2px solid $blueColor;
+        @include prefixer(transition, all .3s ease-in-out, webkit moz ms o);
+        &:focus {
+
+            outline: none;
+        }
+
+        span {
+
+            width: 80%;
+            height: 2px;
+            display: block;
+            background: $blueColor;
+            margin: 5px auto;
+            @include prefixer(transition, all .3s ease-in-out, webkit moz ms o);
+        }
+
+        &:hover {
+
+            border: 2px solid $redColor;
+
+            span {
+
+                background: $redColor;
+
+            }
+        }
+    }
+
+    .navbar-collapse {
+
+        @media #{$extraSmallScreen}, #{$smallScreen}, #{$mediumScreen} {
+            
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            background: #fff;
+            display: none;
+        }
+
+        .navbar-nav {
+                
+            @media #{$extraSmallScreen}, #{$smallScreen}, #{$mediumScreen} {
+                
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                padding: 200px 0px; 
+            }
+    
+            .nav-item {
+    
+                &:last-of-type {
+    
+                    margin-right: 0px;
+                }
+                .nav-link {
+    
+                    padding: 15px;
+                    color: $blueColor;
+                    @include prefixer(transition, all .5s ease-in-out, webkit moz ms o);
+                    font-weight: 500;
+                    font-family: 'Oswald', sans-serif;
+                    @media #{$extraSmallScreen}, #{$smallScreen}, #{$mediumScreen} {
+                        
+                        text-align: center;
+                    }
+
+                    &:hover {
+    
+                        color: $redColor
+                    }
+                }
+    
+                .nav-link.active-link {
+    
+                    color: $redColor;
+                    
+                }   
+    
+            }
+
+        }
+
+        .close-icon {
+
+            display: none;
+            @media #{$extraSmallScreen}, #{$smallScreen}, #{$mediumScreen} {
+                
+                display: block;
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                z-index: 2;
+                padding: 20px;
+                text-align: center;
+                cursor: pointer;
+                @include prefixer(transition, all .5s ease-in-out, webkit moz ms o);
+                i {
+
+                    color: $blueColor;
+                    @include prefixer(transition, all .5s ease-in-out, webkit moz ms o);
+
+                }
+
+                &:hover {
+
+                    i {
+
+                        color: $redColor;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}

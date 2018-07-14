@@ -1,0 +1,38 @@
+.company-overview {
+
+    padding: 100px 0px;
+    background: rgba($blueColor, .2);
+
+    p {
+
+        @media #{$extraLargeScreen}, #{$largeScreen} {
+            
+            width: 60%;
+            margin: 20px auto; 
+
+        }
+
+        @media #{$smallScreen}, #{$mediumScreen} {
+            
+            width: 75%;
+            margin: 20px auto; 
+
+        }
+
+        @media #{$extraSmallScreen} {
+            
+            width: 90%;
+            margin: 20px auto; 
+
+        }
+    }
+
+
+    span {
+
+        color: rgba(#000, .5);
+        font-weight: 500;
+        display: block;
+        margin-bottom: 20px;
+    }
+}

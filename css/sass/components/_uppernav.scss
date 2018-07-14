@@ -1,0 +1,75 @@
+.upper-nav {
+
+    padding: 15px 0px;
+    background: $blueColor;
+
+    .phone {
+
+        color: rgba(#fff, .8);
+        padding: 10px;
+        @media #{$extraSmallScreen} {
+
+            text-align: center;
+        }
+        span {
+            cursor: pointer;
+            margin-right: 10px;
+            @include prefixer(transition, all .3s ease-in-out, webkit mox ms);
+            i {
+
+                @include prefixer(transition, all .3s ease-in-out, webkit mox ms);
+                color: #fff;
+
+            }
+
+            &:hover {
+
+                i {
+
+                    color: $redColor;
+                }
+            }
+        }
+    }
+
+    .email {
+
+        color: rgba(#fff, .8);
+        padding: 10px 0px;
+        @media #{$extraSmallScreen} {
+
+            text-align: center;
+        }
+        
+        span {
+            cursor: pointer;
+            margin-right: 10px;
+            @include prefixer(transition, all .3s ease-in-out, webkit mox ms);
+
+            i {
+
+                color: #fff;
+                @include prefixer(transition, all .3s ease-in-out, webkit mox ms);
+
+            }
+
+            &:hover {
+
+                i {
+
+                    color: $redColor;
+                }
+            }
+        }
+    }
+
+    .lets-work {
+
+        color: rgba(#fff, .8);
+        padding: 10px;
+        @media #{$largeScreen}, #{$extraLargeScreen} {
+
+            text-align: right
+        }
+    }
+}

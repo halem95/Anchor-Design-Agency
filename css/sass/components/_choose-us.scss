@@ -1,0 +1,43 @@
+.choose-us {
+
+    background: $blueColor;
+
+    .container-fluid {
+
+        padding: 0px;
+
+        .row {
+
+            margin-left: 0px;
+            margin-right: 0px;
+            .col-12,
+            .col-md {
+
+                padding: 0px;
+            }
+        }
+    }
+
+    .choose-us-content {
+
+        padding: 20px;
+
+        h3 {
+
+            color: $redColor;
+
+        }
+
+        p {
+
+            color: #fff;
+            padding: 15px 0px;
+        }
+
+        hr {
+
+            background: $redColor;
+            
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.pricing-table {
+
+    padding: 100px 0px;
+
+    p.price-p{
+
+        @media #{$extraLargeScreen}, #{$largeScreen} {
+            
+            width: 60%;
+            margin: 30px auto;
+        }
+
+        @media #{$smallScreen}, #{$mediumScreen} {
+            
+            width: 75%;
+            margin: 30px auto;
+        }
+
+        @media #{$extraSmallScreen} {
+            
+            width: 90%;
+            margin: 30px auto;
+        }
+        
+    }
+
+    .table-item {
+
+        background: rgba($blueColor, .8);
+        padding: 30px 0px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        @include prefixer(transition, all .5s ease-in-out, webkit moz ms o);
+        cursor: pointer;
+        border-radius: 5px;
+        &:last-of-type {
+
+            margin-bottom: 0px;
+        }
+        .table-header {
+
+            h4 {
+
+                color: #fff;
+                padding: 15px 0px;
+            }
+    
+            p {
+    
+                padding: 15px 0px;
+                color: #fff;
+            }
+
+        }
+
+        .price-year {
+
+            padding: 10px 0px;
+            background: rgba(#fff, .5);
+
+            h5 {
+
+                span {
+
+                    font-style: italic;
+                    font-size: 40px;
+                    color: $redColor;
+                    @include prefixer(transition, all .5s ease-in-out, webkit moz ms o);
+
+                }
+            }
+        }
+
+
+        .table-footer {
+
+            ul {
+
+                li {
+
+
+                    padding: 10px 0px;
+                    color: #fff;
+                    font-weight: 500
+                }
+            }
+        }
+
+        &:hover {
+
+            transform: translateY(-20px);
+            @include prefixer(box-shadow, 0 15px 20px rgba(#000, .5), webkit moz ms o);
+
+            .price-year {
+
+                background: $redColor;
+                color: #fff;
+                h5 {
+
+                    span {
+
+                        color: #fff;
+                    }
+                }
+            }
+
+            .table-btn {
+
+                .price-table-btn {
+
+                    background: $blueColor;
+                    color: #fff;
+                    border: 2px solid #fff;
+                }
+            }
+        }
+
+    }
+}

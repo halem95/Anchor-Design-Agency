@@ -1,0 +1,37 @@
+$blueColor: #08526d;
+$redColor: #dc3545;
+
+$extraSmallScreen : '(max-width: 574px)';
+$smallScreen : '(min-width: 575px) and (max-width: 767px)';
+$mediumScreen : '(min-width: 768px) and (max-width: 991px)';
+$largeScreen: '(min-width: 992px) and (max-width: 1199px)';
+$extraLargeScreen : '(min-width: 1200px)';
+
+p {
+
+    margin-bottom: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+    margin-top: 0px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.link-br {
+
+    position: absolute;
+    width: 0;
+    height: 5px;
+    display: block;
+    background: $redColor;
+}
+
+
+p {
+
+    color: rgba(#000, .5);
+    font-weight: 500;
+
+}
